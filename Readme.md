@@ -1,14 +1,15 @@
 
 Username:         user
 
-#Installation
+-Installation
+
 sudo yum -y install rsync lsyncd
 
 ssh-keygen
 
 sudo ssh-copy-id user@172.16.1.172 ; ssh-copy-id user@172.17.1.172
 
-#Test
+-Test
 ssh user@172.16.1.172
 
 #Permission 
