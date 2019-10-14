@@ -1,3 +1,15 @@
+#Readme
+
+Here I will explain commands to setup and configure auto folder/directory sync across servers.
+
+#Servers
+
+172.16.1.172
+172.17.1.172
+172.18.1.172
+
+Setting up following commands for server 172.18.1.172.
+
 
 Username:         user
 
@@ -5,17 +17,23 @@ Username:         user
 
 sudo yum -y install rsync lsyncd
 
+#Permission 
+
 ssh-keygen
 
-sudo ssh-copy-id user@172.16.1.172 ; ssh-copy-id user@172.17.1.172
+ssh-copy-id user@172.16.1.172 
+ssh-copy-id user@172.17.1.172
+
+sudo chmod -R 0777 /vol/data/tmp/
+
 
 #Test
 
 ssh user@172.16.1.172
 
-#Permission 
 
-sudo chmod -R 0777 /vol/data/tmp/
+
+
 
 
 #Configuration
