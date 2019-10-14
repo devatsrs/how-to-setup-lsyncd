@@ -22,7 +22,7 @@ sudo chmod -R 0777 /vol/data/tmp/
 
 sudo vi /etc/lsyncd.conf
 
-`
+
 settings  {
 
         logfile = "/var/log/lsyncd/lsyncd.log",
@@ -31,23 +31,28 @@ settings  {
         statusInterval = 1,
         insist = true
 }
+
 sync {
+
         default.rsync,
         source = "/vol/data/tmp",
         target = "user@172.16.1.172:/vol/data/tmp",
         delete = false,
         delay = 1,
+
 }
 
 sync {
+
         default.rsync,
         source = "/vol/data/tmp",
         target = "user@172.17.1.172:/vol/data/tmp",
         delete = false,
         delay = 1,
+
 }
 
-`
+
 
 
 #Restart
