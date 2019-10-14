@@ -4,9 +4,12 @@ Here I will explain commands to setup and configure auto folder/directory sync a
 
 #Servers
 
-172.16.1.172
-172.17.1.172
-172.18.1.172
+ 172.16.1.172
+
+ 172.17.1.172
+
+ 172.18.1.172
+
 
 Setting up following commands for server 172.18.1.172.
 
