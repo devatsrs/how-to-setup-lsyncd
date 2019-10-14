@@ -87,3 +87,8 @@ sudo systemctl restart lsyncd
 #Testing 
 
 sudo rsync -avzh /vol/data/tmp/ user@172.17.1.172:/vol/data/tmp/
+
+
+#Reference
+
+https://axkibe.github.io/lsyncd/manual/config/layer4/
