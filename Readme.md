@@ -61,6 +61,8 @@ sync {
         target = "user@172.16.1.172:/vol/data/tmp",
         delete = false,
         delay = 1,
+        rsync = { perms=true, chmod = "775", _extra = { "--omit-dir-times" }  }
+
 
 }
 
@@ -71,6 +73,8 @@ sync {
         target = "user@172.17.1.172:/vol/data/tmp",
         delete = false,
         delay = 1,
+        rsync = { perms=true, chmod = "775", _extra = { "--omit-dir-times" }  }
+
 
 }
 
