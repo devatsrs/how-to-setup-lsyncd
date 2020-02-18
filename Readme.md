@@ -24,16 +24,16 @@ sudo yum -y install rsync lsyncd
 
 ssh-keygen
 
-ssh-copy-id user@172.16.1.172 
+sudo ssh-copy-id user@172.16.1.172 
 
-ssh-copy-id user@172.17.1.172
+sudo ssh-copy-id user@172.17.1.172
 
 sudo chmod -R 0777 /vol/data/tmp/
 
 
 #Test
 
-ssh user@172.16.1.172
+sudo ssh user@172.16.1.172
 
 
 
